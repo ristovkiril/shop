@@ -2,163 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8643b5e2-62ca-4709-971c-6fa6ed821d2f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/auth/Auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/axios/axios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/AboutUs/AboutUs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/App/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/App/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/App/App.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/App/Routes/AdminRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/App/Routes/AppliedRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/App/Routes/LoginRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/App/Routes/Routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/App/Routes/UserAdminRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/App/Routes/UserRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/Cart/ProductCartItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/Cart/UserCart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/Category/CategoryIndex.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/Category/CategoryItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/Category/Create/CategorySize.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/Category/Create/CreateCategory.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/Category/Details/DetailsCategory.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/Category/Edit/EditCategory.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/Footer/footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/Header/HeaderLogin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/Header/categoryItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/Header/header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/Home/HomeProductItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/Home/home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/Product/Create/CategorySelectOption.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/Product/Create/CreateProduct.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/Product/Create/SizeItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/Product/Details/DetailsProduct.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/Product/Details/SizeOptionItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/Product/Edit/EditProduct.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/Product/ProductImage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/Product/ProductItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/Product/productIndex.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/User/AddToRole/AddToRole.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/User/AddToRole/UserOption.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/User/Login/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/User/Orders/AllOrders/AllOrderCartItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/User/Orders/AllOrders/AllOrders.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/User/Orders/OrderCartItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/User/Orders/UserOrders.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/User/Profile/EditProfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/User/Profile/UserChangePassword.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/User/Profile/UserProfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/User/Register/Register.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/service/CartService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/service/CategoryService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/service/ProductService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/service/SizeService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/service/UserService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/serviceWorker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/setupTests.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/ShopApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/configuration/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/configuration/UserPrincipal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/configuration/UserPrincipalDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/controllers/CartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/controllers/CartProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/controllers/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/controllers/ImageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/controllers/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/controllers/SizeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/controllers/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/jobs/ScheduledTasks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/mappers/ProductMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/mappers/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/mappers/impl/ProductMapperImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/mappers/impl/UserMapperImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/model/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/model/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/model/DataHolder/DataHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/model/Dto/CartProductDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/model/Dto/ImageDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/model/Dto/ProductDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/model/Dto/ProductSizeDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/model/Dto/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/model/Dto/UserLoginDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/model/Dto/UserSetRoleDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/model/Dto/UserToLoginDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/model/Enum/Roles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/model/ProductImage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/model/Requests/Cart/CartEditRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/model/Requests/Cart/CartProductRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/model/Requests/Cart/CartRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/model/Requests/Cart/CreateCartProductRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/model/Requests/Category/CreateCategoryRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/model/Requests/Category/CreateCategorySizeRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/model/Requests/Product/CreateProductRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/model/Requests/Size/CreateSizeRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/model/Requests/User/ChangePasswordRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/model/Requests/User/EditUserRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/model/Requests/User/OrderRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/model/Requests/User/RegisterRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/model/Requests/User/SetUserRoleRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/model/Size.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/model/relations/CartProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/model/relations/ProductSize.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/model/relations/ProductSizeId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/repository/CartRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/repository/CategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/repository/SizeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/repository/relations/CartProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/repository/relations/ProductImageRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/repository/relations/ProductSizeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/service/CartProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/service/CartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/service/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/service/ProductImageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/service/ProductSizeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/service/SizeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/service/impl/CartProductServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/service/impl/CartServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/service/impl/ProductImageServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/service/impl/ProductServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/service/impl/ProductSizeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/service/impl/SizeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/shop/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/112407330-red-hawaiian-shirt-beach-summer-cloth-vector-flat-cartoon-shirt-isolated-on-white-background-.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/127560838-blue-hawaiian-shirt-beach-summer-cloth-vector-flat-cartoon-shirt-isolated-on-white-background-.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/500_F_122053712_iBBBuxjHcbV8gtuM46cs5ahLHsqP3X7b.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/69696525-vector-illustration-hawaiian-aloha-shirt-hawaii-shirt-aloha-beach-male-cloth-clothing-pattern-design.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/Cartoon-Baby-Boys-Girls-T-Shirts-Summer-SpongeBob-Print-Children-Short-Sleeve-T-Shirts-Cotton-Kids.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/a699-512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/clipart-clothes-animated-18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/images (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/images.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/product-image-1017736454_1024x1024.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/rBVaVVwxZCeAJysEAAeK6_u_DLk861.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/t-shirt-fathers-day-clothing-cartoon-t-shirts.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/project/shop/ShopApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/test.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -193,60 +37,39 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/frontend/src/component/Category/Details/DetailsCategory.js">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/project/shop/ShopApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1136">
-              <caret line="100" selection-start-line="100" selection-end-line="100" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="276">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/frontend/src/component/Product/Details/DetailsProduct.js">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/project/shop/service/impl/ProductSizeServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="226" selection-start-line="226" selection-end-line="226" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/frontend/src/component/User/Orders/UserOrders.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="65" column="48" selection-start-line="65" selection-start-column="48" selection-end-line="65" selection-end-column="48" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/frontend/src/component/User/Orders/OrderCartItem.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="14" column="21" selection-start-line="12" selection-start-column="20" selection-end-line="14" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="115">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/frontend/src/component/User/Orders/AllOrders/AllOrderCartItem.js">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/project/shop/service/impl/ProductServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+            <state relative-caret-position="381">
+              <caret line="238" lean-forward="true" selection-start-line="228" selection-start-column="3" selection-end-line="238" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="method#ProductServiceImpl#0;class#ProductServiceImpl#0" />
+                <element signature="e#2337#2338#0" expanded="true" />
+                <element signature="e#2418#2419#0" expanded="true" />
+                <element signature="method#getProduct#1;class#ProductServiceImpl#0" />
+                <element signature="method#getProductsByCategory#0;class#ProductServiceImpl#0" />
+                <element signature="method#getMostViewedProducts#0;class#ProductServiceImpl#0" />
+                <element signature="method#getAllProductSearchEngine#0;class#ProductServiceImpl#0" />
+                <element signature="method#createProductImage#0;class#ProductServiceImpl#0" />
+                <element signature="method#getAllProductImages#0;class#ProductServiceImpl#0" />
+                <element signature="method#setMainImage#0;class#ProductServiceImpl#0" />
               </folding>
             </state>
           </provider>
@@ -353,7 +176,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="665" />
     <option name="width" value="1265" />
     <option name="height" value="1050" />
@@ -380,57 +203,6 @@
               <item name="shop" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="component" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="component" type="462c0819:PsiDirectoryNode" />
-              <item name="User" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="component" type="462c0819:PsiDirectoryNode" />
-              <item name="User" type="462c0819:PsiDirectoryNode" />
-              <item name="Orders" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="component" type="462c0819:PsiDirectoryNode" />
-              <item name="User" type="462c0819:PsiDirectoryNode" />
-              <item name="Orders" type="462c0819:PsiDirectoryNode" />
-              <item name="AllOrders" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -447,64 +219,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="shop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="configuration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="DataHolder" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="Requests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="Requests" type="462c0819:PsiDirectoryNode" />
-              <item name="Cart" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shop" type="b2602c69:ProjectViewProjectNode" />
@@ -826,16 +540,18 @@
       <workItem from="1586685635619" duration="7112000" />
       <workItem from="1586708078025" duration="2780000" />
       <workItem from="1586712577442" duration="12293000" />
+      <workItem from="1586727315952" duration="459000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="529271000" />
+    <option name="totallyTimeSpent" value="529730000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25637585" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -851,7 +567,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49932885" visible="true" weight="0.31586403" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49932885" visible="true" weight="0.31586403" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.31586403" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.3286119" />
@@ -962,33 +678,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/frontend/src/component/AboutUs/AboutUs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/frontend/src/service/UserService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/project/shop/model/Requests/User/RegisterRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="25" column="31" lean-forward="true" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/frontend/src/service/CartService.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/project/shop/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="897">
@@ -1060,26 +749,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/project/shop/service/impl/ProductServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2047">
-          <caret line="148" selection-start-line="148" selection-end-line="148" />
-          <folding>
-            <element signature="method#ProductServiceImpl#0;class#ProductServiceImpl#0" />
-            <element signature="e#2337#2338#0" expanded="true" />
-            <element signature="e#2418#2419#0" expanded="true" />
-            <element signature="method#getProduct#1;class#ProductServiceImpl#0" />
-            <element signature="method#getProductsByCategory#0;class#ProductServiceImpl#0" />
-            <element signature="method#getMostViewedProducts#0;class#ProductServiceImpl#0" />
-            <element signature="method#getAllProductSearchEngine#0;class#ProductServiceImpl#0" />
-            <element signature="method#createProductImage#0;class#ProductServiceImpl#0" />
-            <element signature="method#getAllProductImages#0;class#ProductServiceImpl#0" />
-            <element signature="method#refreshViews#0;class#ProductServiceImpl#0" />
-            <element signature="method#setMainImage#0;class#ProductServiceImpl#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/project/shop/service/impl/CategoryServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
@@ -1098,13 +767,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/project/shop/ShopApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1325,7 +987,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/frontend/src/component/Category/Details/DetailsCategory.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1136">
+        <state relative-caret-position="2185">
           <caret line="100" selection-start-line="100" selection-end-line="100" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -1335,7 +997,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/frontend/src/component/Product/Details/DetailsProduct.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
+        <state relative-caret-position="4991">
           <caret line="226" selection-start-line="226" selection-end-line="226" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -1345,8 +1007,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/frontend/src/component/User/Orders/UserOrders.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
+        <state relative-caret-position="1426">
           <caret line="65" column="48" selection-start-line="65" selection-start-column="48" selection-end-line="65" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontend/src/component/User/Orders/OrderCartItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="14" column="21" selection-start-line="12" selection-start-column="20" selection-end-line="14" selection-end-column="21" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -1360,22 +1032,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/frontend/src/component/User/Orders/OrderCartItem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="14" column="21" selection-start-line="12" selection-start-column="20" selection-end-line="14" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/frontend/src/component/User/Orders/AllOrders/AllOrderCartItem.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/project/shop/configuration/UserPrincipalDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-46" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/project/shop/jobs/ScheduledTasks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/project/shop/ShopApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/project/shop/service/impl/ProductSizeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/project/shop/service/impl/ProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="238" lean-forward="true" selection-start-line="228" selection-start-column="3" selection-end-line="238" />
+          <folding>
+            <element signature="method#ProductServiceImpl#0;class#ProductServiceImpl#0" />
+            <element signature="e#2337#2338#0" expanded="true" />
+            <element signature="e#2418#2419#0" expanded="true" />
+            <element signature="method#getProduct#1;class#ProductServiceImpl#0" />
+            <element signature="method#getProductsByCategory#0;class#ProductServiceImpl#0" />
+            <element signature="method#getMostViewedProducts#0;class#ProductServiceImpl#0" />
+            <element signature="method#getAllProductSearchEngine#0;class#ProductServiceImpl#0" />
+            <element signature="method#createProductImage#0;class#ProductServiceImpl#0" />
+            <element signature="method#getAllProductImages#0;class#ProductServiceImpl#0" />
+            <element signature="method#setMainImage#0;class#ProductServiceImpl#0" />
           </folding>
         </state>
       </provider>
