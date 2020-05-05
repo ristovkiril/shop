@@ -1,7 +1,6 @@
 package com.project.shop.service.impl;
 
 import com.project.shop.model.Category;
-import com.project.shop.model.Dto.ProductDto;
 import com.project.shop.model.Product;
 import com.project.shop.model.ProductImage;
 import com.project.shop.model.Requests.Product.CreateProductRequest;
@@ -22,8 +21,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.transaction.Transactional;
 import java.io.IOException;
-import java.time.Instant;
-import java.time.ZoneOffset;
 import java.util.*;
 import java.util.stream.Collectors;
 

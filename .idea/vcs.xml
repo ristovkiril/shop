@@ -2,9 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Project-WP" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Shop-project" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Shop-project-WP" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/WP-Project" vcs="Git" />
   </component>
 </project>
