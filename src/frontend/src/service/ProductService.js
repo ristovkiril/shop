@@ -12,8 +12,8 @@ const ProductService = {
     getAllProductsSearchEnginePaged: (term, page, size) => {
         return HttpClient.get(`/products/search?term=${term}&page=${page}&size=${size}`);
     },
-    getMostViewedProducts: () => {
-        return HttpClient.get(`/products/mostViewed`);
+    getMostViewedProducts: (size) => {
+        return HttpClient.get(`/products/mostViewed?size=${size}`);
     },
     addProducts: (product) => {
         return HttpClient.post(`/products/create`, product, {

@@ -228,6 +228,7 @@ public class ProductServiceImpl implements ProductService {
         var products = repository.findAll();
 
         products.forEach(p -> {
+            p.setLastWeekViews(p.getViews());
             p.setViews(0L);
         });
 

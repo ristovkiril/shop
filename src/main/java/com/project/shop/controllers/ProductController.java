@@ -110,8 +110,8 @@ public class ProductController {
     }
 
     @GetMapping("/mostViewed")
-    public Page<ProductDto> mostViewed(){
-        return productMapper.getMostViewedProducts();
+    public Page<ProductDto> mostViewed(@RequestParam(name = "size", defaultValue = "6")int size ){
+        return productMapper.getMostViewedProducts(size);
     }
 
     @GetMapping("/product/{id}/images")

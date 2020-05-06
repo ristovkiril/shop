@@ -1,10 +1,12 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
-import ReactPaginate from 'react-paginate'
+import {Link} from 'react-router-dom';
+import ReactPaginate from 'react-paginate';
+import {Doughnut} from "react-chartjs-2";
 
 import ProductService from '../../service/ProductService';
 
 import ProductItem from './ProductItem';
+import ProductBarChart from "./Charts/ProductBarChart";
 
 class ProductIndex extends React.Component {
 
@@ -210,6 +212,12 @@ class ProductIndex extends React.Component {
 
         return (
             <div className="container pb-5 my-3 py-3 bg-white">
+                {
+                    this.props.appUser.user !== null && (this.props.appUser.user.role !== "CUSTOMER") && this.state.products.length !== 0?
+                        <ProductBarChart products={this.state.products} />
+                        : ""
+                }
+
                 <div className=" row">
                     <div className="text-left p-4 col-6">
                         {

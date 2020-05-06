@@ -69,6 +69,8 @@ public class ProductMapperImpl implements ProductMapper {
         productDto.setDescription(product.getDescription());
         productDto.setName(product.getName());
         productDto.setPrice(product.getPrice());
+        productDto.setViews(product.getViews());
+        productDto.setLastWeekViews(product.getLastWeekViews());
         productDto.setSizes(productSizeRepository.findAllByProductId_Id(product.getId()));
         productDto.setImages(product.getImages().stream()
                 .map(i -> {
@@ -121,8 +123,8 @@ public class ProductMapperImpl implements ProductMapper {
     }
 
     @Override
-    public Page<ProductDto> getMostViewedProducts() {
-        Pageable pageable = PageRequest.of(0,6,  Sort.by("views").descending());
+    public Page<ProductDto> getMostViewedProducts(int size) {
+        Pageable pageable = PageRequest.of(0,size,  Sort.by("views").descending());
 
         return mapToProductDtoPage(productRepository.findAll(pageable));
     }

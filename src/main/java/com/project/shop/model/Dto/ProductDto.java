@@ -26,6 +26,10 @@ public class ProductDto {
 
     private Category category;
 
+    private Long views = 0L;
+
+    private Long lastWeekViews = 0L;
+
     private List<ImageDto> images = new ArrayList<>();
 
     private List<ProductSize> sizes = new ArrayList<>();

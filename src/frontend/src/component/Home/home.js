@@ -22,7 +22,7 @@ class Home extends React.Component {
     }
 
     getMostViewed(){
-        ProductService.getMostViewedProducts().then((resp) => {
+        ProductService.getMostViewedProducts(6).then((resp) => {
             console.log(resp.data);
 
             this.setState((prevState) => {

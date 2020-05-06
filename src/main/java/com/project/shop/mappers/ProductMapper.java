@@ -19,7 +19,7 @@ public interface ProductMapper {
 
     ProductDto getProductDto(UUID id);
 
-    Page<ProductDto> getMostViewedProducts();
+    Page<ProductDto> getMostViewedProducts(int size);
 
     List<CartProductDto> getCartProducts(UUID id);
 

@@ -55,7 +55,7 @@ public class Product {
 
     private Long views = 0L;
 
-    private static Object lock = new Object();
+    private Long lastWeekViews = 0L;
 
     public long increaseViews () {
         return ++views;
