@@ -1,12 +1,11 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import ReactPaginate from 'react-paginate';
-import {Doughnut} from "react-chartjs-2";
 
 import ProductService from '../../service/ProductService';
 
 import ProductItem from './ProductItem';
-import ProductBarChart from "./Charts/ProductBarChart";
+import Charts from "./Charts/Charts";
 
 class ProductIndex extends React.Component {
 
@@ -31,6 +30,7 @@ class ProductIndex extends React.Component {
     componentDidMount() {
         const {match: {params}} = this.props;
         let categoryId = params.id;
+
 
         console.log(categoryId);
         this.getProducts(this.state.page,this.state.size, categoryId);
@@ -76,6 +76,22 @@ class ProductIndex extends React.Component {
                     };
 
                     return newState;
+                }, () => {
+                    const labels = this.state.products.map(p => p.name);
+                    const data = this.state.products.map(p => p.views);
+
+                    this.setState((prevState) => {
+                        const newValue = {
+                            'labels': labels,
+                            'data': data
+                        };
+                        const newState = {
+                            ...prevState,
+                            ...newValue
+                        };
+
+                        return newState;
+                    })
                 });
             });
         }
@@ -97,8 +113,24 @@ class ProductIndex extends React.Component {
                     };
 
                     return newState;
-                });
+                },() => {
+                    const labels = this.state.products.map(p => p.name);
+                    const data = this.state.products.map(p => p.views);
+
+                    this.setState((prevState) => {
+                        const newValue = {
+                            'labels': labels,
+                            'data': data
+                        };
+                        const newState = {
+                            ...prevState,
+                            ...newValue
+                        };
+
+                        return newState;
+                    });
             });
+        })
         }
     }
 
@@ -213,8 +245,9 @@ class ProductIndex extends React.Component {
         return (
             <div className="container pb-5 my-3 py-3 bg-white">
                 {
-                    this.props.appUser.user !== null && (this.props.appUser.user.role !== "CUSTOMER") && this.state.products.length !== 0?
-                        <ProductBarChart products={this.state.products} />
+                    this.props.appUser.user !== null && (this.props.appUser.user.role !== "CUSTOMER")
+                    && this.state.products.length !== 0 && this.state.labels !== undefined && this.state.data !== undefined?
+                        <Charts data={this.state.data} labels={this.state.labels} />
                         : ""
                 }
 

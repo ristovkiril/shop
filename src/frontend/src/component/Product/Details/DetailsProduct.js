@@ -8,6 +8,7 @@ import {Link} from 'react-router-dom';
 
 import $ from 'jquery';
 import ProductImage from "../ProductImage";
+import Charts from "../Charts/Charts";
 
 class DetailsProduct extends React.Component {
 
@@ -67,6 +68,8 @@ class DetailsProduct extends React.Component {
                         'sizes': newSizes,
                         'category': resp.data.category.subcategory.name,
                         'subcategory': resp.data.category.name,
+                        'views': resp.data.views,
+                        'lastWeekViews': resp.data.lastWeekViews
                     };
                     const newState = {
                         ...prevState,
@@ -77,6 +80,22 @@ class DetailsProduct extends React.Component {
                 }, () => {
                     this.getProductSizes(id);
                     ProductService.increaseViews(id).then((resp) => {
+                        const labels = ["last week", "this week"]
+                        const data = [this.state.lastWeekViews, this.state.views];
+
+
+                        this.setState((prevState) => {
+                            const newValue = {
+                                'labels': labels,
+                                'data': data
+                            };
+                            const newState = {
+                                ...prevState,
+                                ...newValue
+                            };
+
+                            return newState;
+                        })
                     }, (err) => {
                         console.log(err.response.statusText)
                     });
@@ -276,7 +295,14 @@ class DetailsProduct extends React.Component {
                     <div className="form-group row">
                         <button type='submit' name="submit" className="btn btn-success m-0">Add to cart</button>
                     </div>
+                    {
+                        this.props.appUser.user !== null && (this.props.appUser.user.role !== "CUSTOMER")
+                        && this.state.labels !== undefined && this.state.data !== undefined?
+                            <Charts data={this.state.data} labels={this.state.labels} />
+                            : ""
+                    }
                 </form>
+
             </div>
 
         );
