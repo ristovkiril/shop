@@ -23,17 +23,26 @@ const UserService = {
             }
         });
     },
-    changePassword: (id, user) => {
-        return HttpClient.post(`/user/edit/${id}/changePassword`, user, {
+    getToken: (user) => {
+        return HttpClient.post(`/user/token`, user, {
             headers: {
                 'Content-Type': 'application/json'
             }
         });
     },
-    updateUser: (id,user) =>{
+    changePassword: (id, user, token) => {
+        return HttpClient.post(`/user/edit/${id}/changePassword`, user, {
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`
+            }
+        });
+    },
+    updateUser: (id,user, token) =>{
       return HttpClient.patch(`/user/edit/${id}`, user, {
           headers: {
-              'Content-Type': 'application/json'
+              'Content-Type': 'application/json',
+              'Authorization': `Bearer ${token}`
           }
       })
     },
@@ -52,10 +61,12 @@ const UserService = {
     getCustomersAndModerator: () => {
         return HttpClient.get(`/user/get/users`);
     },
-    changeRole: (req) => {
+    changeRole: (req, token) => {
         return HttpClient.post(`/user/edit/role`, req, {
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`
+
             }
         });
     }

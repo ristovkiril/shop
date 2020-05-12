@@ -15,10 +15,11 @@ const ProductService = {
     getMostViewedProducts: (size) => {
         return HttpClient.get(`/products/mostViewed?size=${size}`);
     },
-    addProducts: (product) => {
+    addProducts: (product, token) => {
         return HttpClient.post(`/products/create`, product, {
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`
             }
         });
     },
@@ -32,13 +33,19 @@ const ProductService = {
             }
         });
     },
-    deleteProduct: (id) => {
-        return HttpClient.delete(`/products/${id}`);
+    deleteProduct: (id, token) => {
+        return HttpClient.delete(`/products/${id}`, {
+            headers: {
+                'Authorization': `Bearer ${token}`
+            }
+        });
     },
-    updateProduct: (id,request) => {
+    updateProduct: (id,request, token) => {
         return HttpClient.patch(`/products/edit/${id}`, request,{
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`
+
             }});
     },
     getProductsByCategory: (id) => {
@@ -59,18 +66,27 @@ const ProductService = {
     getProductFirstImage: (id) => {
         return HttpClient.get(`/products/product/${id}/image`)
     },
-    deleteImage: (id) => {
-        return HttpClient.delete(`/products/product/image/${id}`)
-    },
-    createProductImages: (id, req) => {
-        return HttpClient.patch(`/products/product/${id}/images`, req, {
+    deleteImage: (id, token) => {
+        return HttpClient.delete(`/products/product/image/${id}`, {
             headers: {
-                'Content-Type': 'multipart/form-data'
+                'Authorization': `Bearer ${token}`
             }
         })
     },
-    setMainImage: (productId, imageId) => {
-        return HttpClient.patch(`/products/product/${productId}/images/main?image=${imageId}`)
+    createProductImages: (id, req, token) => {
+        return HttpClient.patch(`/products/product/${id}/images`, req, {
+            headers: {
+                'Content-Type': 'multipart/form-data',
+                'Authorization': `Bearer ${token}`
+            }
+        })
+    },
+    setMainImage: (productId, imageId, token) => {
+        return HttpClient.patch(`/products/product/${productId}/images/main?image=${imageId}`, {
+            headers: {
+                'Authorization': `Bearer ${token}`
+            }
+        })
     }
 };
 

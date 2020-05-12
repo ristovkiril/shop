@@ -6,6 +6,7 @@ import CategoryService from '../../service/CategoryService'
 import CategoryItem from "./CategoryItem";
 
 import {Link} from "react-router-dom";
+import Cookies from "js-cookie";
 
 class CategoryIndex extends React.Component{
     constructor(props){
@@ -48,7 +49,10 @@ class CategoryIndex extends React.Component{
     removeHandle = (e) => {
         console.log(e);
         if(window.confirm("Are you sure you want to delete this category?")) {
-            CategoryService.deleteCategory(e).then((resp) => {
+            let token = Cookies.get("token");
+            //const token = JSON.parse(tok.replace(new RegExp(/'/g), '"'));
+
+            CategoryService.deleteCategory(e, token).then((resp) => {
                 console.log(resp);
                 this.getAllCategories();
             });

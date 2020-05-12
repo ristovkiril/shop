@@ -8,6 +8,7 @@ import ProductService from "../../../service/ProductService";
 
 import $ from 'jquery';
 import {Link} from "react-router-dom";
+import Cookies from "js-cookie";
 
 class  CreateProduct extends React.Component {
 
@@ -192,6 +193,7 @@ class  CreateProduct extends React.Component {
            };
            newSizes.push(sizeRequest);
         });
+
         const productRequest = {
             'name': this.state.name,
             'description': this.state.description,
@@ -200,7 +202,10 @@ class  CreateProduct extends React.Component {
             'sizes': newSizes
         };
 
-        ProductService.addProducts(productRequest).then((resp) =>{
+        let token = Cookies.get("token");
+        //const token = JSON.parse(tok.replace(new RegExp(/'/g), '"'));
+
+        ProductService.addProducts(productRequest, token).then((resp) =>{
             if (this.state.files.length > 0) {
                 let product = resp.data;
                 const files = new FormData();
@@ -209,7 +214,7 @@ class  CreateProduct extends React.Component {
                     files.append("images", item);
                 });
 
-                ProductService.createProductImages(product.id, files).then((resp) => {
+                ProductService.createProductImages(product.id, files, token).then((resp) => {
                     this.props.history.push("/products");
                 }, (err) => {
                     alert("Image size is very big try with few photos.");

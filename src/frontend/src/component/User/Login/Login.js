@@ -30,27 +30,40 @@ class Login extends React.Component {
     onSubmitHandle = (e) => {
         e.preventDefault();
 
-        UserService.login(this.state).then((resp) => {
+        const loginData = {
+            "email": this.state.email,
+            "password": this.state.password
+        }
+
+        UserService.login(loginData).then((resp) => {
             if(resp.data !== null && resp.data.user !== null && resp.data.cart !== null){
-                //USER
-                this.props.appProps.userHasAuthenticated(true);
-                this.props.appUser.setUser(resp.data.user);
+                UserService.getToken(loginData).then((tokenResponse) => {
+                    //USER
+                    this.props.appProps.userHasAuthenticated(true);
+                    this.props.appUser.setUser(resp.data.user);
 
-                let date = new Date();
+                    const token = tokenResponse.data;
+                    console.log("Token");
+                    console.log(tokenResponse);
 
-                Cookies.set("user", resp.data.user, {expires: date.getDate() + 7});
-                //Cart
-                this.props.appUserCart.setUserCart(resp.data.cart);
+                    let date = new Date();
 
-                Cookies.set("userCart", resp.data.cart, {expires: date.getDate() + 7});
-                //Products
-                console.log("LOGGED IN")
-                console.log(resp.data);
-                this.props.appUserCartProducts.setUserCartProducts(resp.data.totalProducts);
-                Cookies.set("userCartProducts", resp.data.totalProducts, {expires: date.getDate() + 7});
+                    Cookies.set("user", resp.data.user, {expires: date.getDate() + 7});
+                    Cookies.set("token", token, {expires: date.getDate() + 7})
+                    //Cart
+                    this.props.appUserCart.setUserCart(resp.data.cart);
+
+                    Cookies.set("userCart", resp.data.cart, {expires: date.getDate() + 7});
+                    //Products
+                    console.log("LOGGED IN")
+                    console.log(resp.data);
+                    this.props.appUserCartProducts.setUserCartProducts(resp.data.totalProducts);
+                    Cookies.set("userCartProducts", resp.data.totalProducts, {expires: date.getDate() + 7});
 
 
-                this.props.history.push("/");
+                    this.props.history.push("/");
+                })
+
             }else {
                 this.setState((prevState) => {
                     const newValue = {

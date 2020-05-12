@@ -9,26 +9,29 @@ const CategoryService = {
     getAllCategoriesPaged: (page, size) => {
         return HttpClient.get(`/category?page=${page}&size=${size}`);
     },
-    addCategory: (category) => {
+    addCategory: (category, token) => {
         return HttpClient.post(`/category/create`, category, {
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`
             }
         });
     },
     getCategory: (id) => {
         return HttpClient.get(`/category/${id}`);
     },
-    deleteCategory: (id) => {
+    deleteCategory: (id, token) => {
         return HttpClient.delete(`/category/${id}`,{
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`
             }});
     },
-    updateCategory: (id,request) => {
+    updateCategory: (id,request, token) => {
         return HttpClient.patch(`/category/${id}`, request,{
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`
             }});
     },
     getMainCategories: () => {

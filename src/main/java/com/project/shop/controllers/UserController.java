@@ -11,7 +11,10 @@ import com.project.shop.model.Requests.User.RegisterRequest;
 import com.project.shop.model.Requests.User.SetUserRoleRequest;
 import com.project.shop.model.User;
 import com.project.shop.service.UserService;
+import com.project.shop.util.JwtUtil;
 import org.springframework.data.domain.Page;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.util.MimeTypeUtils;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
@@ -28,9 +31,15 @@ public class UserController {
 
     private final UserMapper userMapper;
 
-    public UserController(UserService userService, UserMapper userMapper) {
+    private final JwtUtil jwtUtil;
+
+    private final AuthenticationManager authenticationManager;
+
+    public UserController(UserService userService, UserMapper userMapper, JwtUtil jwtUtil, AuthenticationManager authenticationManager) {
         this.userService = userService;
         this.userMapper = userMapper;
+        this.jwtUtil = jwtUtil;
+        this.authenticationManager = authenticationManager;
     }
 
     @GetMapping
@@ -103,6 +112,18 @@ public class UserController {
     @PostMapping(consumes = MimeTypeUtils.APPLICATION_JSON_VALUE, path = "/edit/role")
     public User setUserToRole(@RequestBody SetUserRoleRequest userRoleRequest){
         return userService.changeUserRole(userRoleRequest);
+    }
+
+    @PostMapping("/token")
+    public String getToken(@RequestBody UserToLoginDto userToLoginDto) throws Exception {
+        try{
+            authenticationManager.authenticate(
+                    new UsernamePasswordAuthenticationToken(userToLoginDto.getEmail(), userToLoginDto.getPassword()));
+        } catch (Exception exception){
+            throw new Exception("Invalid username/password");
+        }
+
+        return jwtUtil.generateToken(userToLoginDto.getEmail());
     }
 
 }

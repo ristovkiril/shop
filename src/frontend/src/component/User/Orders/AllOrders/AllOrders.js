@@ -4,6 +4,7 @@ import CartService from '../../../../service/CartService';
 import AllOrderCartItem from "./AllOrderCartItem";
 
 import ReactPaginate from 'react-paginate'
+import Cookies from "js-cookie";
 
 
 class AllOrders extends React.Component {
@@ -68,7 +69,10 @@ class AllOrders extends React.Component {
                         'totalPrice': o.totalPrice
                     };
 
-                    CartService.updateCart(cartRequest).then((resp) => {
+                    let token = Cookies.get("token");
+                    // const token = JSON.parse(tok.replace(new RegExp(/'/g), '"'));
+
+                    CartService.updateCart(cartRequest, token).then((resp) => {
                       o = resp.data;
                     }, (err) => {
                         console.log(err.response.statusText);

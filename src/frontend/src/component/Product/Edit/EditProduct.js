@@ -6,6 +6,7 @@ import ProductService from "../../../service/ProductService";
 import $ from 'jquery';
 import {Link} from "react-router-dom";
 import ProductImage from "../ProductImage";
+import Cookies from "js-cookie";
 
 class  CreateProduct extends React.Component {
 
@@ -199,7 +200,9 @@ class  CreateProduct extends React.Component {
 
             return newState;
         }, () => {
-            ProductService.setMainImage(this.state.id, e).then((resp) => {
+            let token = Cookies.get("token");
+
+            ProductService.setMainImage(this.state.id, e, token).then((resp) => {
                 // this.setState((prevState) => {
                 //     const newValue = {
                 //         'images': resp.data
@@ -220,7 +223,10 @@ class  CreateProduct extends React.Component {
 
     onRemoveHandle = (e) => {
         if(window.confirm("Are you sure you want to delete this image?")) {
-            ProductService.deleteImage(e).then((resp) => {
+            let token = Cookies.get("token");
+            //const token = JSON.parse(tok.replace(new RegExp(/'/g), '"'));
+
+            ProductService.deleteImage(e, token).then((resp) => {
                 console.log(e);
                 let images = [];
 
@@ -281,7 +287,11 @@ class  CreateProduct extends React.Component {
             'sizes': newSizes
         };
         console.log(productRequest);
-        ProductService.updateProduct(this.state.id, productRequest).then((resp) =>{
+
+        let token = Cookies.get("token");
+        //const token = JSON.parse(tok.replace(new RegExp(/'/g), '"'));
+
+        ProductService.updateProduct(this.state.id, productRequest, token).then((resp) =>{
             if (this.state.newImages.length > 0) {
                 let product = resp.data;
                 const files = new FormData();
@@ -292,7 +302,7 @@ class  CreateProduct extends React.Component {
                     }
                 });
 
-                ProductService.createProductImages(product.id, files).then((resp) => {
+                ProductService.createProductImages(product.id, files, token).then((resp) => {
                     this.props.history.push("/products")
                 }, (err) => {
                     alert("Error");

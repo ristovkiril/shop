@@ -9,6 +9,7 @@ import {Link} from 'react-router-dom';
 import $ from 'jquery';
 import ProductImage from "../ProductImage";
 import Charts from "../Charts/Charts";
+import Cookies from "js-cookie";
 
 class DetailsProduct extends React.Component {
 
@@ -212,7 +213,10 @@ class DetailsProduct extends React.Component {
                 'quantity': this.state.productQuantity
             };
 
-            CartService.addProductToCart(cartProductRequest).then((resp) => {
+            let tok = Cookies.get("token");
+            //const token = JSON.parse(tok.replace(new RegExp(/'/g), '"'));
+
+            CartService.addProductToCart(cartProductRequest, tok).then((resp) => {
                 console.log(resp);
 
                 let value = this.props.appUserCartProducts.userCartProducts + 1;

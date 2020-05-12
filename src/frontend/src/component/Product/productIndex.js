@@ -6,6 +6,7 @@ import ProductService from '../../service/ProductService';
 
 import ProductItem from './ProductItem';
 import Charts from "./Charts/Charts";
+import Cookies from "js-cookie";
 
 class ProductIndex extends React.Component {
 
@@ -162,7 +163,10 @@ class ProductIndex extends React.Component {
     removeHandle = (e) => {
         console.log(e);
         if(window.confirm("Are you sure you want to delete this product?")) {
-            ProductService.deleteProduct(e).then((resp) => {
+            let token = Cookies.get("token");
+            //const token = JSON.parse(tok.replace(new RegExp(/'/g), '"'));
+
+            ProductService.deleteProduct(e, token).then((resp) => {
                 this.getProducts(this.state.page, this.state.size, this.state.categoryId);
             });
         }

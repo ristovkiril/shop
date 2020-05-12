@@ -126,7 +126,10 @@ class UserCart extends React.Component {
         console.log(e);
         console.log(this.state);
         if(window.confirm("Are you sure you want to delete this product?")) {
-            CartService.deleteProductFromCart(e).then((resp) => {
+            let token = Cookies.get("token");
+           // const token = JSON.parse(tok.replace(new RegExp(/'/g), '"'));
+
+            CartService.deleteProductFromCart(e, token).then((resp) => {
                 this.getAllProducts(this.state.id);
             });
         }
@@ -163,7 +166,10 @@ class UserCart extends React.Component {
             'cartProducts': products
         };
 
-        CartService.createOrderRequest(orderRequest).then((resp) => {
+        let token = Cookies.get("token");
+      //  const token = JSON.parse(tok.replace(new RegExp(/'/g), '"'));
+
+        CartService.createOrderRequest(orderRequest, token).then((resp) => {
             alert("Your order was successful.");
             this.props.appUserCart.setUserCart(resp.data);
             this.props.appUserCartProducts.setUserCartProducts(0);

@@ -23,28 +23,32 @@ function App() {
         let cookie_categories = Cookies.get("mainCategories");
         let cookie_products = Cookies.get("userCartProducts");
 
-        //alert("mi");
+        let tok = Cookies.get("token");
 
-        if (cookie_user !== undefined && cookie_user !== null
+        if (tok !== undefined && tok !== null) {
+            //const token = JSON.parse(tok.replace(new RegExp(/'/g), '"'));
+
+            if (cookie_user !== undefined && cookie_user !== null
                 && cookie_cart !== undefined && cookie_cart !== null
-                && cookie_products !== undefined && cookie_products !== null){
-            //USER
-            cookie_user = JSON.parse(cookie_user.replace(new RegExp(/'/g), '"'));
+                && cookie_products !== undefined && cookie_products !== null) {
+                //USER
+                cookie_user = JSON.parse(cookie_user.replace(new RegExp(/'/g), '"'));
 
-            userHasAuthenticated(true);
-            setUser(cookie_user);
-            //CART
-            cookie_cart = JSON.parse(cookie_cart.replace(new RegExp(/'/g), '"'));
+                userHasAuthenticated(true);
+                setUser(cookie_user);
+                //CART
+                cookie_cart = JSON.parse(cookie_cart.replace(new RegExp(/'/g), '"'));
 
-            setUserCart(cookie_cart);
-            //PRODUCTS
-            cookie_products = JSON.parse(cookie_products.replace(new RegExp(/'/g), '"'));
+                setUserCart(cookie_cart);
+                //PRODUCTS
+                cookie_products = JSON.parse(cookie_products.replace(new RegExp(/'/g), '"'));
 
-            console.log("Cookie products");
-            console.log(cookie_products);
+                console.log("Cookie products");
+                console.log(cookie_products);
 
-            setUserCartProducts(cookie_products);
+                setUserCartProducts(cookie_products);
 
+            }
         }
         if(cookie_categories !== undefined && cookie_categories !== null){
             //CATEGORIES

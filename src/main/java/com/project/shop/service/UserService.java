@@ -9,6 +9,7 @@ import com.project.shop.model.Requests.User.RegisterRequest;
 import com.project.shop.model.Requests.User.SetUserRoleRequest;
 import com.project.shop.model.User;
 import org.springframework.data.domain.Page;
+import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.List;
 import java.util.UUID;
@@ -35,4 +36,5 @@ public interface UserService {
 
     User changeUserRole (SetUserRoleRequest userRoleRequest);
 
+    UserDetails loadByUserName(String term);
 }

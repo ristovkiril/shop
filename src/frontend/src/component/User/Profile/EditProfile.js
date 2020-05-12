@@ -1,6 +1,7 @@
 import React from 'react';
 
 import UserService from '../../../service/UserService'
+import Cookies from "js-cookie";
 
 class UserProfile extends React.Component {
 
@@ -26,6 +27,9 @@ class UserProfile extends React.Component {
     onSubmitHandle = (e) => {
       e.preventDefault();
 
+        let token = Cookies.get("token");
+        // const token = JSON.parse(tok.replace(new RegExp(/'/g), '"'));
+
         const userRequest = {
             'name': this.state.name,
             'lastName': this.state.lastName,
@@ -34,7 +38,7 @@ class UserProfile extends React.Component {
             'address': this.state.address,
         };
 
-        UserService.updateUser(this.state.id, userRequest).then((resp) => {
+        UserService.updateUser(this.state.id, userRequest, token).then((resp) => {
             this.props.appUser.setUser(resp.data);
 
             this.props.history.push(`/profile/${resp.data.id}`)

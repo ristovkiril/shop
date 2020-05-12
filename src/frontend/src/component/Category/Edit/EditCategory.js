@@ -7,6 +7,7 @@ import SizeService from '../../../service/SizeService';
 import CategorySelectOption from "../../Product/Create/CategorySelectOption";
 import $ from "jquery";
 import {Link} from "react-router-dom";
+import Cookies from "js-cookie";
 
 
 class EditCategory extends React.Component {
@@ -32,6 +33,7 @@ class EditCategory extends React.Component {
     }
 
     getCategory(id){
+
         CategoryService.getCategory(id).then((resp) => {
             console.log(resp);
             this.setState((prevState) => {
@@ -189,7 +191,10 @@ class EditCategory extends React.Component {
     onSizeRemove = (e) => {
 
         if(window.confirm("Are you sure you want to delete this size?")) {
-            SizeService.deleteSize(e).then((succ) => {
+            let token = Cookies.get("token");
+            //const token = JSON.parse(tok.replace(new RegExp(/'/g), '"'));
+
+            SizeService.deleteSize(e, token).then((succ) => {
                 let newSizes = [];
                 this.state.sizes.forEach(s => {
                     if (s.id !== e) {
@@ -243,7 +248,10 @@ class EditCategory extends React.Component {
             'sizes': sizeRequest
         };
 
-        CategoryService.updateCategory(id,categorySizeRequest).then((resp) => {
+        let token = Cookies.get("token");
+        // const token = JSON.parse(tok.replace(new RegExp(/'/g), '"'));
+
+        CategoryService.updateCategory(id,categorySizeRequest, token).then((resp) => {
             this.props.history.push("/category");
         }, (err) => {
             const {data} = err.response;

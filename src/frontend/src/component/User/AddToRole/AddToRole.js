@@ -5,6 +5,9 @@ import UserOption from "./UserOption";
 
 import $ from 'jquery'
 
+import Cookies from 'js-cookie';
+
+
 class AddToRole extends React.Component {
 
     constructor(props) {
@@ -103,6 +106,8 @@ class AddToRole extends React.Component {
 
     onSubmitHandle = (e) => {
         e.preventDefault();
+        let token = Cookies.get("token");
+        //const token = JSON.parse(tok.replace(new RegExp(/'/g), '"'));
 
         const request = {
             'userId': this.state.userId,
@@ -110,7 +115,7 @@ class AddToRole extends React.Component {
         };
         console.log(request);
 
-        UserService.changeRole(request).then((resp) => {
+        UserService.changeRole(request, token).then((resp) => {
             alert("User role is changed");
         }, (err) => {
             alert("error");

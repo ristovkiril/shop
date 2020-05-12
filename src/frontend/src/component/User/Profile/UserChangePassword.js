@@ -2,6 +2,7 @@ import React from 'react';
 
 import UserService from '../../../service/UserService'
 import $ from "jquery";
+import Cookies from "js-cookie";
 
 class UserChangePassword extends React.Component {
 
@@ -44,7 +45,10 @@ class UserChangePassword extends React.Component {
                 'oldPassword': this.state.oldPassword
             };
 
-            UserService.changePassword(this.state.userId, userRequest).then((resp) => {
+            let token = Cookies.get("token");
+            //const token = JSON.parse(tok.replace(new RegExp(/'/g), '"'));
+
+            UserService.changePassword(this.state.userId, userRequest, token).then((resp) => {
                 this.props.appUser.setUser(resp.data);
 
                 this.props.history.push(`/profile/${resp.data.id}`)

@@ -16,6 +16,7 @@ export default function HeaderLogin ({appProps, appUser, appUserCart}){
         Cookies.remove("userCart");
         Cookies.remove("mainCategories");
         Cookies.remove("userCartProducts");
+        Cookies.remove("token");
 
         history.push("/login");
         console.log(history.push("/login"))

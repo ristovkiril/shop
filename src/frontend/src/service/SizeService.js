@@ -9,20 +9,22 @@ const SizeService = {
     getAllSizesPaged: (page, size) => {
         return HttpClient.get(`/size?page=${page}&size=${size}`);
     },
-    addSize: (category) => {
+    addSize: (category, token) => {
         return HttpClient.post(`/category/create`, category, {
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`
             }
         });
     },
     getSize: (id) => {
         return HttpClient.get(`/size/${id}`);
     },
-    deleteSize: (id) => {
+    deleteSize: (id, token) => {
         return HttpClient.delete(`/size/${id}`,{
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`
             }});
     },
     getAllSizesFromCategory: (id) => {
