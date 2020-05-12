@@ -20,13 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8643b5e2-62ca-4709-971c-6fa6ed821d2f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/component/Product/Charts/Charts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/src/component/Product/Charts/ProductBarChart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/src/component/Product/Details/DetailsProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/src/component/Product/Details/DetailsProduct.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/src/component/Product/productIndex.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/src/component/Product/productIndex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/src/component/User/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/src/component/User/Login/Login.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,22 +98,22 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.project.shop" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\risto\IdeaProjects\shop\src" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.project.shop.model.Dto" />
-      <recent name="com.project.shop.model.Requests" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\risto\IdeaProjects\shop\src\main\resources" />
       <recent name="C:\Users\risto\IdeaProjects\shop\src\frontend\src\component\User\Orders" />
       <recent name="C:\Users\risto\IdeaProjects\shop\src\frontend\src\component\User\UserOrders" />
       <recent name="C:\Users\risto\IdeaProjects\shop\src\frontend\src\component\App\Routes" />
       <recent name="C:\Users\risto\IdeaProjects\shop\src\frontend\src\component\User\Login" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.project.shop" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.project.shop.model.Dto" />
+      <recent name="com.project.shop.model.Requests" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\risto\IdeaProjects\shop\src" />
     </key>
   </component>
   <component name="RunManager">

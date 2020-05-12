@@ -30,7 +30,12 @@ class Login extends React.Component {
     onSubmitHandle = (e) => {
         e.preventDefault();
 
-        UserService.login(this.state).then((resp) => {
+        const loginData = {
+            'email': this.state.email,
+            'password': this.state.password
+        }
+
+        UserService.login(loginData).then((resp) => {
             if(resp.data !== null && resp.data.user !== null && resp.data.cart !== null){
                 //USER
                 this.props.appProps.userHasAuthenticated(true);
